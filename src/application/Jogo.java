@@ -1,14 +1,16 @@
 package application;
 
-import mesajogo.Posicao;
 import mesajogo.Tabuleiro;
+import xadrez.PartidaXadrez;
+import xadrez.PecaXadrez;
 
 public class Jogo {
 
 	public static void main(String[] args) {
 		
-		Tabuleiro tabuleiro = new Tabuleiro(8, 8);
-		System.out.println(tabuleiro);
+		PartidaXadrez partidaXadrez = new PartidaXadrez();
+		UI.printTabuleiro(partidaXadrez.getPecas());
+		
 
 	}
 
